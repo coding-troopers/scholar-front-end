@@ -1,1 +1,1 @@
-## Scholar Online Learning Platform 
+## Scholar Learning Platform  
