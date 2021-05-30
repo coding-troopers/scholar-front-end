@@ -13,7 +13,7 @@ const breakPoints = [
 function Sliders() {
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
+      <h1 style={{ textAlign: "center" }}>Sliders</h1>
       <div className="App">
         <Carousel breakPoints={breakPoints}>
           <Item>One</Item>

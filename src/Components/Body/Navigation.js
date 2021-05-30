@@ -1,6 +1,7 @@
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import React, { Component } from 'react'
+import Sliders from '../Sliders/Sliders.jsx'
 
 export class Navigation extends Component {
     constructor(props) {
@@ -21,19 +22,20 @@ export class Navigation extends Component {
     render() {
         var message
         if(this.state.value==="Python"){
-            message="Python Data"
+            message=<Sliders/>
+            
         }else if(this.state.value==="Excel"){
-            message="Excel Data"
+            message=<Sliders/>
         }else if(this.state.value==="Web Development"){
-            message="Web Development Data"
+            message=<Sliders/>
         }else if(this.state.value==="JavaScript"){
-            message="JavaScript Data"
+            message=<Sliders/>
         }else if(this.state.value==="DataScience"){
-            message="DataScience Data"
+            message=<Sliders/>
         }else if(this.state.value==="AWS Certification"){
-            message="AWS Certification"
+            message=<Sliders/>
         }else if(this.state.value==="Drawing"){
-            message="Drawing Data"
+            message=<Sliders/>
         }
         return (
             <div>
