@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // created by Rahul Beniwal. This is header component 
 
 import React from 'react'
