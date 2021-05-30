@@ -3,6 +3,7 @@ import {Header} from './Components';  // import component directly from their di
                                       // instead of their component files 
 // import {Sliders} from './Components';
 import Navigation from './Components/Body/Navigation';
+import Footer from './Components/Footer/Footer';
                                        
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       {/* <Sliders/>          Slider by Abhishek Kumar */}
 
       <Navigation></Navigation>
+      <Footer></Footer>
     </div>
   );
 }
