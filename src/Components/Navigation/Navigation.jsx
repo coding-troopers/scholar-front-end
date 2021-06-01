@@ -1,3 +1,4 @@
+// Adding card component. Edit by Rahul Beniwal 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import React, { Component } from 'react'
@@ -38,6 +39,7 @@ export class Navigation extends Component {
         }else if(this.state.value==="Drawing"){
             message=<Sliders/>
         }
+        
         return (
             <div className={classes.mainContainer}>
                 <BottomNavigation value={this.state.value} showLabels onChange={this.change} class={classes.MuiBottomNavigation}>

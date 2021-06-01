@@ -2,7 +2,7 @@
 // created by Rahul Beniwal. This is header component 
 
 import React from 'react'
-import './Header.module.css'
+import stylles from './Header.module.css'
 import { FormControl, TextField, withStyles, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { ShoppingCart } from '@material-ui/icons';
