@@ -4,3 +4,9 @@
 .MuiBottomNavigation{
     margin-left: 3%;
 }
+.MuiBottomNavigationAction-label{
+    font-size: 1.9rem;
+}
+.dataDiv{
+    padding-right: 3%;
+}
