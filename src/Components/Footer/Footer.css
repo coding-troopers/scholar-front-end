@@ -6,6 +6,10 @@
   bottom: 0;
   width: 100%;
 }
+.col li:hover{
+  color: #237b8d;
+  cursor: pointer;
+}
 .row p{
     float: right;
 }
