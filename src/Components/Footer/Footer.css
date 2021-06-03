@@ -1,0 +1,11 @@
+.main-footer {
+  color: #43A8BA;
+  background-color: #FFFFFF;
+  padding: 3em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.row p{
+    float: right;
+}
