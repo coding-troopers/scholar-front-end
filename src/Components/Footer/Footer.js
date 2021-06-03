@@ -13,7 +13,7 @@ function Footer() {
                             <li>Teach on Scholar</li>
                             <li>Get the app</li>
                             <li>About us</li>
-                            <li>Conatact us</li>
+                            <li>Contact us</li>
                         </ui>
                     </div>
                     {/* Column2 */}
