@@ -3,6 +3,7 @@ import {Header,Navigation} from './Components';  // import component directly fr
 // instead of their component files 
 // import {Sliders} from './Components';
 import Footer from './Components/Footer/Footer';
+import Categories from './Components/Categories/Categories';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
 
       <Navigation></Navigation>
       </div>
+      <Categories/>
       <Footer/>
     </div>
   );
