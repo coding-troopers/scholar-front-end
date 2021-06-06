@@ -2,11 +2,11 @@
 
 export {default as Header} from './Header/Header' // export header component   
 export {default as Sliders} from './Sliders/Sliders'  // export slider as component
-export {default as Navigation} from './Navigation/Navigation'
-export {default as Python} from './Navigation/Data/Python'
-export {default as Excel} from './Navigation/Data/Excel'
-export {default as WebDevelopment} from './Navigation/Data/WebDevelopment'
-export {default as JavaScript} from './Navigation/Data/JavaScript'
-export {default as DataScience} from './Navigation/Data/DataScience'
-export {default as AWSCertification} from './Navigation/Data/AWSCertification'
-export {default as Drawing} from './Navigation/Data/Drawing'
+export {default as Navigation} from './Navigation/Navigation' //export navigation as componennt
+export {default as Python} from './Navigation/Data/Python' //export PythonNavigationData as componennt
+export {default as Excel} from './Navigation/Data/Excel' //export ExcelNavigationData as componennt
+export {default as WebDevelopment} from './Navigation/Data/WebDevelopment' //export WebDevelopmentNavigationData as componennt
+export {default as JavaScript} from './Navigation/Data/JavaScript' //export JavaScriptNavigationData as componennt
+export {default as DataScience} from './Navigation/Data/DataScience' //export DataScienceNavigationData as componennt
+export {default as AWSCertification} from './Navigation/Data/AWSCertification' //export AWSCertificationNavigationData as componennt
+export {default as Drawing} from './Navigation/Data/Drawing' //export DrawingNavigationData as componennt
