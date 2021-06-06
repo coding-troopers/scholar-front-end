@@ -2,12 +2,12 @@
 // created by Rahul Beniwal. This is header component 
 
 import React from 'react'
-import './Header.module.css'
 import { FormControl, TextField, withStyles, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { ShoppingCart } from '@material-ui/icons';
 import CategoryIcon from '@material-ui/icons/Category';
 import Notification from './Notification';
+import styles from "./Header.module.css";
 
 
 const useStyle = makeStyles((theme) => ({
@@ -46,14 +46,14 @@ function Header() {
     const classes = useStyle();
 
     return (
-        <div className={classes.header}>
+        <div className={styles.header}>
             <div><Notification/></div>
             <div className={classes.defaultHeader}>
                 <div>Logo</div>
-                <Button href="#" className={classes.linkStyle}><CategoryIcon /></Button>
+                <Button  className={classes.linkStyle}><CategoryIcon /></Button>
                 <form>
                     <from noValidate autoComplete="off">
-                        <TextField id="standard-basic" label="Search Courses" variant="outlined" />
+                        <TextField id="standard-basic" label="Search Courses" variant="standard" />
                     </from>
                 </form>
                 <Button> <ShoppingCart /> </Button>

@@ -1,0 +1,8 @@
+Guys please keep all your data in this Section 
+
+ static data is the data which we are using (local data ) until we dont have API to 
+make interface 
+
+ API folder will contain the data fetch by API 
+
+ Reminder And Urgent  :- Please move all data from component to this section and then import that 
