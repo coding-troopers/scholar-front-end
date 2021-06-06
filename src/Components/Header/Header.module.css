@@ -1,7 +1,14 @@
 
+.header
+{
+    box-sizing: border-box;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
 
 .defaultHeader{
-    display: none;
+    position: sticky;
     background: rgb(241, 240, 238);
 }
 
