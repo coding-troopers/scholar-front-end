@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme)=>({
         textAlign : "center",
         margin: "0 auto",
         width : "40%",
+        minWidth : "400px",
         '& > * + *' : {
             marginTop : theme.spacing(2)
         }

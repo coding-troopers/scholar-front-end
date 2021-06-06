@@ -1,10 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import {Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Ty, Typography} from "@material-ui/core"
+import {Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles";
-import Item from "./Item";
-import CourseLogo from "./CourseLogo.jpg";
-import styles from "./Slider.module.css"
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },

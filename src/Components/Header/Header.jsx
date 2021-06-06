@@ -2,12 +2,13 @@
 // created by Rahul Beniwal. This is header component 
 
 import React from 'react'
-import { FormControl, TextField, withStyles, Button } from '@material-ui/core';
+import { FormControl, TextField, withStyles, Button, IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { ShoppingCart } from '@material-ui/icons';
 import CategoryIcon from '@material-ui/icons/Category';
 import Notification from './Notification';
 import styles from "./Header.module.css";
+
 
 
 const useStyle = makeStyles((theme) => ({
@@ -16,8 +17,8 @@ const useStyle = makeStyles((theme) => ({
         borderRadius: 3,
         border: 0,
         color: 'white',
-        height: 48,
-        padding: '0 30px',
+        height: 30,
+        padding: '0 10px',
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
         margin: '10px'
     },
@@ -49,7 +50,9 @@ function Header() {
         <div className={styles.header}>
             <div><Notification/></div>
             <div className={classes.defaultHeader}>
-                <div>Logo</div>
+                <IconButton>
+                <div className={styles.logo}><img className={styles.logoImage} src={require("../../data/logoUnfinished.jpg").default} alt="logo"/></div>
+                </IconButton>
                 <Button  className={classes.linkStyle}><CategoryIcon /></Button>
                 <form>
                     <from noValidate autoComplete="off">
@@ -57,8 +60,8 @@ function Header() {
                     </from>
                 </form>
                 <Button> <ShoppingCart /> </Button>
-                <div className="signupOptions">
-                    <Button variant="outlined" color="primary" className={classes.root}>Login</Button>
+                <div className={styles.signupOptions}>
+                    <Button variant="outlined"  color="primary" className={classes.root}>Login</Button>
                     <Button variant="outlined" color="primary" className={classes.root}>Signup</Button>
                 </div>
             </div>

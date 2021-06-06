@@ -3,7 +3,8 @@
 {
     box-sizing: border-box;
     z-index: 1;
-    position: sticky;
+    display: flex;
+    flex-direction: column;
     top: 0;
 }
 
@@ -12,3 +13,32 @@
     background: rgb(241, 240, 238);
 }
 
+.signupOptions{
+    display : flex;
+
+}
+
+@media screen and  (max-width: 676px){
+    .signupOptions{
+        /* display : none; */
+        display : flex;
+        flex-direction: column;
+    }
+}
+.logo{
+    /* padding : 10px; */
+
+}
+.logoImage{
+    height: 60px;
+    width: 60px;
+    border-radius: 33px;
+}
+
+@media screen and (max-width: 559px) {
+    .header{
+        display : flex;
+        flex-direction : column-reverse;
+    }
+    
+}
