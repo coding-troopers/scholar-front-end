@@ -20,7 +20,7 @@ function ImageCarousel(props)
     ]
 
     return (
-        <Carousel autoPlay>
+        <Carousel autoplay>
             {
                 images.map( (image, i) => <Item key={i} image={image} /> )
             }
