@@ -1,26 +1,28 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@material-ui/core'
-import Image1 from './practice.png'
+import Image1 from '../../data/practice.png'
+import Image2 from '../../data/e-learn.png'
+import Image3 from '../../data/online-learning.jpg'
+
 function ImageCarousel(props)
 {
-    var items = [
+    var images = [
         {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!",
-            url:"https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGF3bnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+           url:Image1 
         },
         {
-            name: "Random Name #2",
-            description: "Hello World!",
-            url:Image1    
+            url:Image2    
+        },
+        {
+            url:Image3
         }
     ]
 
     return (
-        <Carousel autoPlay>
+        <Carousel autoplay>
             {
-                items.map( (item, i) => <Item key={i} item={item} /> )
+                images.map( (image, i) => <Item key={i} image={image} /> )
             }
         </Carousel>
     )
@@ -30,12 +32,7 @@ function Item(props)
 {
     return (
         <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-            <img src={props.item.url} alt={props.item.name}/>
-            {/* <Button className="CheckButton">
-                Check it out!
-            </Button> */}
+            <img src={props.image.url} alt={props.image.name} width='100%' height='600em'/>
         </Paper>
     )
 }

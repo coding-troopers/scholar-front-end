@@ -2,6 +2,9 @@
 
 export {default as Header} from './Header/Header' // export header component   
 export {default as Sliders} from './Sliders/Sliders'  // export slider as component
+export {default as ImageCarousel} from './ImageCarousel/ImageCarousel'
+export {default as Categories} from './Categories/Categories'
+export {default as Footer} from './Footer/Footer'
 export {default as Navigation} from './Navigation/Navigation' //export navigation as componennt
 export {default as Python} from './Navigation/Data/Python' //export PythonNavigationData as componennt
 export {default as Excel} from './Navigation/Data/Excel' //export ExcelNavigationData as componennt
