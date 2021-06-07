@@ -4,6 +4,7 @@ import {Header,Navigation} from './Components';  // import component directly fr
 
 import {ImageCarousel,Footer,Categories} from './Components'                                       
 
+import Feature from './Components/Footer/Feature/Feature';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navigation></Navigation>
       </div>
       <Categories/>
+      <Feature/>
       <Footer/>
     </div>
   );
