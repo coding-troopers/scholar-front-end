@@ -6,8 +6,6 @@ export class Python extends Component {
     render() {
         return (
                 <div className={classes.container}>
-                    <h3>Lead data-driven decisions with Data Science</h3>
-                    <p>Data science is everywhere. Better data science practices are allowing corporations to cut unnecessary costs, automate computing, and analyze markets. Essentially, data science is the key to getting ahead in a competitive global climate.</p>
                     <h2 className={classes.headingh2}>Expand your career opportunities with Python</h2>
                     <p className={classes.paragraphTagP}>Whether you work in machine learning or finance,
                     or are pursuing a career in web development or data
