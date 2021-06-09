@@ -27,10 +27,11 @@ const useStyle = makeStyles((theme) => ({
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center",
-        borderRadius : "14px",
+        borderRadius : "10px",
         backgroundImage: "linear-gradient(to left, #1f3a64, #00678c, #0094a5, #57c1b0, #a8ebb6)",
         marginBottom : "10px",
         transition : "border 0.5s",
+        marginTop : "10px",
         transitionTimingFunction : "ease-out",
         "&:hover" : {
             zIndex : "1",
