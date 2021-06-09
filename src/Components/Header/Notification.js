@@ -5,7 +5,6 @@ import {Alert, AlertTitle} from "@material-ui/lab"
 import Collapse from "@material-ui/core/Collapse"
 import CloseIcon from "@material-ui/icons/Close"
 import { IconButton } from '@material-ui/core'
-import { Close, SettingsInputComponent } from '@material-ui/icons'
 
 
 const useStyles = makeStyles((theme)=>({
@@ -15,8 +14,12 @@ const useStyles = makeStyles((theme)=>({
         margin: "0 auto",
         width : "40%",
         minWidth : "400px",
+        transition : "width 0.5s",
         '& > * + *' : {
             marginTop : theme.spacing(2)
+        },
+        '&:hover' : {
+            width : "100%",
         }
     },
     inform : {
