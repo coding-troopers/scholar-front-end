@@ -7,11 +7,7 @@
     flex-direction: column;
     top: 0;
 }
-
-.defaultHeader{
-    position: sticky;
-    background: rgb(241, 240, 238);
-}
+ 
 
 .signupOptions{
     display : flex;
@@ -32,7 +28,8 @@
 .logoImage{
     height: 60px;
     width: 60px;
-    border-radius: 33px;
+    border-radius: 50%;
+    
 }
 
 @media screen and (max-width: 559px) {
@@ -41,4 +38,13 @@
         flex-direction : column-reverse;
     }
     
+}
+
+.makeStyles-defaultHeader-2{
+    margin-bottom: 10px;
+}
+
+#standard-basic-label{
+ display : none !important;
+    font-weight: 900 !important;
 }

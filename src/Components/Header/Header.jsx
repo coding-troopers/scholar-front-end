@@ -27,9 +27,16 @@ const useStyle = makeStyles((theme) => ({
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center",
-        backgroundColor: "rgb(246, 245, 244)",
-        borderRadius: "99px",
-        boxShadow: "10px 10px 8px rgb(233, 243, 227)"
+        borderRadius : "14px",
+        backgroundImage: "linear-gradient(to left, #1f3a64, #00678c, #0094a5, #57c1b0, #a8ebb6)",
+        marginBottom : "10px",
+        transition : "border 0.5s",
+        transitionTimingFunction : "ease-out",
+        "&:hover" : {
+            zIndex : "1",
+            border : "10px solid white",
+
+        }
     },
     linkStyle: {
         textDecoration: "none"
@@ -54,15 +61,13 @@ function Header() {
                 <div className={styles.logo}><img className={styles.logoImage} src={require("../../data/logoUnfinished.jpg").default} alt="logo"/></div>
                 </IconButton>
                 <Button  className={classes.linkStyle}><CategoryIcon /></Button>
-                <form>
-                    <from noValidate autoComplete="off">
-                        <TextField id="standard-basic" label="Search Courses" variant="standard" />
-                    </from>
+                <form noValidate autoComplete="off">
+                        <TextField id="standard-basic" label="Search Courses" variant="filled" />
                 </form>
                 <Button> <ShoppingCart /> </Button>
                 <div className={styles.signupOptions}>
-                    <Button variant="outlined"  color="primary" className={classes.root}>Login</Button>
-                    <Button variant="outlined" color="primary" className={classes.root}>Signup</Button>
+                    <Button variant="contained"  color="primary" className={classes.root}>Login</Button>
+                    <Button variant="contained" color="primary" className={classes.root}>Signup</Button>
                 </div>
             </div>
         </div>
