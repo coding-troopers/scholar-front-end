@@ -1,4 +1,5 @@
 /* For responsive work*/
+
 @media screen and (min-width: 300px) {
     .Box {
       grid-template-columns: repeat(auto-fit, minmax(16rem, 36rem));
@@ -12,4 +13,22 @@
       height: 40rem;
       
     }
+  }
+
+
+  .cardActions{
+    max-height: 350px;
+  }
+
+  .categoryName{
+    display : block;
+    font-size: 15px;
+    width : 100%;
+    font-weight: 600;
+    height : 35px;
+    overflow : hidden;
+  }
+
+  .Box{
+    width : fit-content;
   }
