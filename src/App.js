@@ -9,13 +9,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="content-wrap">
+      {/* <div className="content-wrap"> */}
       <Header/>
       <ImageCarousel/>
       <Navigation></Navigation>
-      </div>
+      {/* </div> */}
       <Categories/>
-      <Feature></Feature>
+      <Feature/>
       <Footer/>
     </div>
   );
