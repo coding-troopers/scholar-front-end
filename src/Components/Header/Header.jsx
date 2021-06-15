@@ -8,7 +8,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import CategoryIcon from '@material-ui/icons/Category';
 import Notification from './Notification';
 import styles from "./Header.module.css";
-
+import {Link} from 'react-router-dom';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -67,8 +67,12 @@ function Header() {
                 </form>
                 <Button> <ShoppingCart /> </Button>
                 <div className={styles.signupOptions}>
+                    <Link to="login">
                     <Button variant="contained"  color="primary" className={classes.root}>Login</Button>
+                    </Link>
+                    <Link to="signup">
                     <Button variant="contained" color="primary" className={classes.root}>Signup</Button>
+                    </Link>
                 </div>
             </div>
         </div>
