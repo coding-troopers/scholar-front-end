@@ -13,3 +13,6 @@ export {default as JavaScript} from './Navigation/Data/JavaScript' //export Java
 export {default as DataScience} from './Navigation/Data/DataScience' //export DataScienceNavigationData as componennt
 export {default as AWSCertification} from './Navigation/Data/AWSCertification' //export AWSCertificationNavigationData as componennt
 export {default as Drawing} from './Navigation/Data/Drawing' //export DrawingNavigationData as componennt
+export {default as Feature} from './Feature/Feature';
+export {default as Login} from './Login/Login';
+export {default as Signup} from './Signup/Signup';
