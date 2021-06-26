@@ -1,33 +1,38 @@
 import React from 'react'
-import  loginImg from '../../data/Images/login.svg'
+import loginImg from '../../data/Images/login.svg'
+import './style.scss'
 
-class  Login extends React.Component{
-constructor(props){
-    super(props)
+
+export default class Login extends React.Component {
+    constructor(props) {
+        super(props)
     }
 
-    render(){
-        return <div>
-            <div className="base-container">
-                <div className="header">Login</div>
-                <div className="content">
-                    <img src={loginImg}/>
-                    <div className="form">
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
-                            <input type="text" id="username" name="username" placeholder="Enter UserName"/>
+    render() {
+        return (
+            <div className="login">
+                <div className="base-container" ref={this.props.containerRef}>
+                    <div className="header">Login</div>
+                    <div className="content">
+                        <div className="image">
+                            <img src={loginImg} />
                         </div>
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter Password"/>
+                        <div className="form">
+                            <div className="form-group">
+                                <label htmlFor="username">Username</label>
+                                <input type="text" name="username" placeholder="Enter User Name" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password</label>
+                                <input type="password" name="password" placeholder="Enter Password" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="footer">
-                    <button className="btn" type="button">Login</button>
+                    <div className="footer">
+                        <button type="submit" className="btn">Login</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        }
+        )
+    }
 }
-export default Login
